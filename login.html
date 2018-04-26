@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+  <style type="text/css">
+
+  .bgimg {
+    opacity: 1.0;
+    z-index: -1;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    position: absolute;
+  }
+
+  form {
+    width: 30%;
+    padding: auto auto;
+    border: 3px solid #43464B;
+    position: relative;
+    left: 33%;
+    top: 20%;
+    height: 60%;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: black;
+    background-color: #E0E0E0;
+    opacity: 0.9;
+    z-index: 0;
+  }
+
+  label {
+    height: 5%;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    height: 10%;
+    border: 1px solid #ccc; 
+    margin: 5% 0;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  }
+
+  button {
+    background-color: #808080;
+    color: white;
+    height: 10%;
+    margin: 5% 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .new_acc {
+    height: 5%;
+    font-size: 95%;
+  }
+
+  button:hover {
+    background-color: #2B65EC;
+  }
+
+  .container {
+    padding: 10% 10%;
+    z-index: 1;
+  }
+
+  input[type=radio] {
+    margin-top: 5%;
+    height: 5%;
+    font-family: ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
+  }
+
+</style>
+</HEAD>
+<BODY>
+  <div class="bgimg" style="background-image: url(bg_2.jpg);"></div>
+  <form action="login.php">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <label for="usrtype"><b>Login As</b></label><br>
+      <input type="radio" name="Stud">Student
+      <input type="radio" name="Stud">Company<br>
+      <button type="submit"><b>Login<b></button><br>
+      <div class="new_acc"><a href="newuser.html">Not A User? Create A New Account Here</a></div>
+      </div>
+
+  </form>
+</BODY>
+</HTML>
